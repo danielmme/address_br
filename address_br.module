@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains address_br.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function address_br_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the address_br module.
+    case 'help.page.address_br':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Brazilian Address field with CEP consult') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function address_br_theme() {
+  return [
+    'address_br' => [
+      'render element' => 'children',
+    ],
+  ];
+}

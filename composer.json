@@ -1,0 +1,13 @@
+{
+    "name": "address_br",
+    "type": "drupal-module",
+    "description": "Brazilian Address field with CEP consult",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/address_br",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/address_br",
+        "source": "http://cgit.drupalcode.org/address_br",
+    },
+}

@@ -1,0 +1,5 @@
+name: 'address_br'
+type: module
+description: 'Brazilian Address field with CEP consult'
+core: 8.x
+package: 'Custom'
