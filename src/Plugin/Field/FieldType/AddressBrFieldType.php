@@ -15,7 +15,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *
  * @FieldType(
  *   id = "address_br_field_type",
- *   label = @Translation("Address br field type"),
+ *   label = @Translation("AddressBr"),
  *   description = @Translation("Brazilian Address field with CEP consult") * )
  *   default_widget = "address_br_field_widget",
  *   default_formatter = "address_br_field_formatter"

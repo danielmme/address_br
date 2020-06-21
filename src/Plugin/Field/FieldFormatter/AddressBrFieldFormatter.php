@@ -56,7 +56,19 @@ class AddressBrFieldFormatter extends FormatterBase {
     $elements = [];
 
     foreach ($items as $delta => $item) {
-      $elements[$delta] = ['#markup' => $this->viewValue($item)];
+      $values = $item->getValue();
+      $elements[$delta] = [
+        '#markup' => $this->viewValue($item),
+        '#theme' => 'br_address_field',
+        '#postal_code' => $values['postal_code'],
+        '#thoroughfare' => $values['thoroughfare'],
+        '#number' => $values['number'],
+        '#street_complement' => $values['street_complement'],
+        '#neighborhood' => $values['neighborhood'],
+        '#city' => $values['city'],
+        '#state' => $values['state'],
+        '#telephone' => $values['telephone'],
+      ];
     }
 
     return $elements;

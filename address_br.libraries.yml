@@ -1,7 +1,16 @@
+jquery_mask:
+  version: VERSION
+  js:
+    js/jquery.mask.js: {}
+  dependencies:
+    - core/jquery
 theme:
-  version: 1.x
-  css:
-    theme:
-      css/address_br_field.css: {}
+  version: VERSION
   js:
     js/address_br_field.js: {}
+  dependencies:
+    - core/jquery
+    - jquery_mask
+  css:
+     https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css: { type: external, minified: true }
+
