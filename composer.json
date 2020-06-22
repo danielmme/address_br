@@ -1,13 +1,13 @@
 {
-    "name": "address_br",
-    "type": "drupal-module",
-    "description": "Brazilian Address field with CEP consult",
-    "keywords": [
-    ],
-    "homepage": "https://www.drupal.org/project/address_br",
+    "name": "danielmme/address_br",
+    "type": "drupal-custom-module",
+    "license": "MIT",
+    "description": "Provides commerce integration for Pagseguro",
     "minimum-stability": "dev",
-    "support": {
-        "issues": "https://www.drupal.org/project/issues/address_br",
-        "source": "http://cgit.drupalcode.org/address_br",
-    },
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://github.com/danielmme/address_br"
+      }
+    ]
 }
